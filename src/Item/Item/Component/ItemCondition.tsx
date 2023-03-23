@@ -44,7 +44,6 @@ const ItemCondition = () => {
     };
 
     const checkboxOnchange = (which: string, target: checkboxStatus[], v: checkboxStatus) => {
-        console.log(v);
         const result = target.map((val) => {
             if (val.name === v.name) {
                 val.value = !val.value;
@@ -142,8 +141,6 @@ const ItemCondition = () => {
                             borderRadius={0}
                             bgColor={'gray.300'}
                             onClick={() => {
-                                console.log(itemStatus);
-                                console.log(aprvStatus);
                             }}
                         >
                             조회

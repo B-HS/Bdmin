@@ -54,24 +54,25 @@ const Sidebar = () => {
             if ('/' + v.value === location.pathname) {
                 setCurrentMenu(v.text);
                 setAccordionIndex(() => [v.group]);
-                console.log(v.group);
             }
         });
     }, []);
 
     return (
         <Flex maxW={'225px'} width={'10%'} bgColor={'gray.300'} flexDirection={'column'} height={'100vh'} boxShadow={'xl'}>
-            <Text
-                boxShadow={'base'}
-                bgColor={'gray.500'}
-                p="0.7rem"
-                fontSize={'xl'}
-                textAlign="center"
-                color={'white'}
-                fontWeight={'extrabold'}
-            >
-                창고프로그램
-            </Text>
+            <Link to={'/'}>
+                <Text
+                    boxShadow={'base'}
+                    bgColor={'gray.500'}
+                    p="0.7rem"
+                    fontSize={'xl'}
+                    textAlign="center"
+                    color={'white'}
+                    fontWeight={'extrabold'}
+                >
+                    창고프로그램
+                </Text>
+            </Link>
             <Box textAlign={'center'}>
                 <Select
                     value={option}
