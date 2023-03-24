@@ -6,6 +6,7 @@ import Item from '../Item/Item/Item';
 import Mesure from '../Item/Mesure/Mesure';
 import Price from '../Item/Price/Price';
 import Review from '../Item/Review/Review';
+import Login from '../Login/Login';
 import Sales from '../Sale/Sales/Sales';
 import Sell from '../Sale/Sell/Sell';
 import Stock from '../Stock/Stock/Stock';
@@ -27,6 +28,7 @@ const Router = () => {
             <Route path="/itemresult" element={<ItemResult />} />
             <Route path="/tester" element={<Tester />} />
             <Route path="/testerdetail" element={<TesterDetail />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
     );
 };
