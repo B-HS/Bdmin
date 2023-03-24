@@ -15,7 +15,30 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useInput from '../Hooks/useInput';
 
-const detailMenuList = [
+export const groupName = [
+    {
+        name: '상품 관리',
+        value: 0
+    },
+    {
+        name: '물류 관리',
+        value: 1
+    },
+    {
+        name: '판매 관리',
+        value: 2
+    },
+    {
+        name: '광고 관리',
+        value: 3
+    },
+    {
+        name: '체험단 관리',
+        value: 4
+    }
+];
+
+export const detailMenuList = [
     { text: '상품 조회', value: 'item', group: 0 },
     { text: '가격 관리', value: 'price', group: 0 },
     { text: '리뷰 관리', value: 'review', group: 0 },
