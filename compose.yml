@@ -6,7 +6,7 @@ services:
     ports:
       - 22022:22022
     environment:
-      MYSQL_ROOT_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: bwarewms
       MYSQL_TCP_PORT: 22022
       TZ: Asia/Seoul
 

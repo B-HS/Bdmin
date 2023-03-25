@@ -1,5 +1,7 @@
 package dev.hyns.bwarehouse_backend.Entity;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -38,5 +40,8 @@ public class AdResult {
 
     @Column
     private Long totalOrder;
+
+    @Column
+    private LocalDateTime adUploadDate;
 
 }
