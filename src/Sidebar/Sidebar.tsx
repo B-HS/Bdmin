@@ -80,6 +80,7 @@ const Sidebar = () => {
             }
         });
     }, []);
+    // 이 부분은 이제 하드코딩하지말고 AJAX완료된 메뉴 목록 기준으로 컴포넌트 로드하는 로직 짜내기
 
     return (
         <Flex maxW={'225px'} width={'10%'} bgColor={'gray.300'} flexDirection={'column'} height={'100vh'} boxShadow={'xl'}>
@@ -93,7 +94,7 @@ const Sidebar = () => {
                     color={'white'}
                     fontWeight={'extrabold'}
                 >
-                    창고프로그램
+                    B관리
                 </Text>
             </Link>
             <Box textAlign={'center'}>
