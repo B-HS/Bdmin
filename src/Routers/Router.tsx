@@ -12,6 +12,7 @@ import Sell from '../Sale/Sell/Sell';
 import Stock from '../Stock/Stock/Stock';
 import Tester from '../Tester/Tester/Tester';
 import TesterDetail from '../Tester/TesterDetail/TesterDetail';
+// 동적 import 모듈 구현하기 
 
 const Router = () => {
     return (
